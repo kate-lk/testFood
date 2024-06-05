@@ -1,0 +1,176 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-bg;
+    padding: 0 6rem;
+    margin-top: 10rem;
+
+    @include media-netbook {
+        max-width: 1300px;
+    }
+
+    @include media-tablet {
+        padding: 0 1rem;
+    }
+}
+
+.footer-logo {
+    width: 42rem;
+    height: 30.7rem;
+    background-image: url(../assets/png/footerLogo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media-fullHD {
+        width: 32rem;
+        height: 21.7rem;
+    }
+}
+
+.footer-text {
+    max-width: 52.3rem;
+    color: $color-light;
+    @extend %font-nav;
+    margin: 2rem 0;
+    margin-left: 15%;
+    @include font($size: 3.7rem, $weight: 400, $height: 4rem);
+
+    @include media-fullHD {
+        // max-width: 50rem;
+        @include font($size: 3.2rem, $weight: 400, $height: 4rem);
+    }
+}
+
+.footer-text-social {
+    color: $color-light;
+    margin: 3rem;
+    margin-left: 15%;
+    margin-bottom: 1rem;
+    @include font($size: 2.5rem, $weight: 400, $height: 4rem);
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 15%;
+    margin-bottom: 5rem;
+}
+
+.footer-social {
+    margin: 1.5rem;
+    cursor: pointer;
+}
+
+.footer-social>svg {
+    fill: white;
+
+    &:hover {
+        fill: $color-active;
+    }
+}
+
+.footer-list-wrapper {
+    @include media-tablet {
+        flex-basis: 40%;
+        margin-left: 5%;
+
+    }
+}
+
+.footer-list {
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-list-item {
+    margin: 1.5rem;
+}
+
+.footer-list-link {
+    text-decoration: none;
+    color: $color-light;
+    @include font($size: 2.5rem, $weight: 400, $height: 3rem);
+
+    &:hover {
+        color: $color-active;
+    }
+}
+
+.footer-form {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-form-name {
+    color: $color-light;
+    @include font($size: 2.5rem, $weight: 400, $height: 4rem);
+
+}
+
+.footer-form-text {
+    max-width: 46rem;
+    background-color: $color-bg;
+    border: 2px solid $color-light;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+
+    @include media-netbook {
+        max-width: 25rem;
+    }
+
+    @include media-tablet {
+        max-width: 20rem;
+    }
+}
+
+.footer-form-send {
+    background-color: $color-light;
+    border: 1px solid $color-light;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    color: $color-active;
+    cursor: pointer;
+}
+
+.footer-pays {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+
+    @include media-netbook {
+        max-width: 20rem;
+    }
+}
+
+.footer-pay {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 4rem;
+    margin-left: 0;
+    margin-top: 4rem;
+
+    &_paypal {
+        width: 15.2rem;
+        height: 4.9rem;
+        background-image: url(../assets/png/paypal-logo.png);
+    }
+
+    &_mastercard {
+        width: 6.4rem;
+        height: 3.6rem;
+        background-image: url(../assets/png/mastercard-logo.png);
+    }
+
+    &_visa {
+        width: 7.1rem;
+        height: 4.6rem;
+        background-image: url(../assets/png/visa-logo.png);
+    }
+}

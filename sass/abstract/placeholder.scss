@@ -1,0 +1,18 @@
+%font-prim {
+  font-family: "DM+Sans", Verdana, sans-serif;
+}
+
+%font-nav {
+  font-family: "Playfair+Display", serif;
+}
+
+%transition {
+  transition: all 0.3s ease-out;
+}
+
+%center {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

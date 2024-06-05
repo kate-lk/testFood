@@ -1,0 +1,52 @@
+.recipes-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+}
+
+.recipes-item {
+    width: 42.5rem;
+    height: 29rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &_1 {
+        background-image: url(../assets/img/Rectangle\ 12.jpg);
+    }
+
+    &_2 {
+        background-image: url(../assets/img/Rectangle\ 13.jpg);
+    }
+
+    &_3 {
+        background-image: url(../assets/img/Rectangle\ 14.jpg);
+    }
+
+    &_4 {
+        background-image: url(../assets/img/Rectangle\ 15.jpg);
+    }
+
+    &_5 {
+        background-image: url(../assets/img/Rectangle\ 16.jpg);
+    }
+
+    &_6 {
+        background-image: url(../assets/img/Rectangle\ 17.jpg);
+    }
+
+    &_7 {
+        background-image: url(../assets/img/Rectangle\ 18.jpg);
+    }
+
+    &_8 {
+        background-image: url(../assets/img/Rectangle\ 19.jpg);
+    }
+
+    @include media-fullHD {
+        width: 32rem;
+        height: 20rem;
+    }
+}

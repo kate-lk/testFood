@@ -1,0 +1,20 @@
+.wrapper {
+    max-width: 1810px;
+    margin: 0 auto;
+
+    // padding: 0 80px;
+    @include media-fullHD {
+        margin: 0 auto;
+        max-width: 1860px;
+        padding: 0 6rem;
+    }
+
+    @include media-netbook {
+        max-width: 964px;
+        padding: 0 3rem;
+    }
+
+    @include media-tablet {
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,38 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1990px;
+
+  @extend %font-prim;
+  @include font($size: 3.2rem, $height: 4.1rem);
+
+  @include media-fullHD {
+    @include font($size: 1.8rem, $weight: 400, $height: 2.1rem);
+  }
+
+  // @include media-small-laptop {
+  //   @include font($size: 1.4rem, $weight: 400, $height: 1.6rem);
+  // }
+  // @include media-mobile {
+  //   @include font($size: 1.4rem, $weight: 400, $height: 1.6rem);
+  // }
+}
+
+h1 {
+  @include font($size: 6.4rem, $weight: 700, $height: 8.3rem);
+  // @include media-fullHD {
+  //   @include font($size: 5.8rem, $weight: 500, $height: 5.6rem);
+  // }
+}
+
+h2 {
+  @include font($size: 4.8rem, $weight: 500, $height: 8.3rem);
+
+  @include media-fullHD {
+    @include font($size: 3.6rem, $weight: 500, $height: 4.3rem);
+  }
+}

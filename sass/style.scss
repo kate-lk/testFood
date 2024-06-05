@@ -1,0 +1,19 @@
+@import "abstract/constant";
+@import "abstract/mixin";
+@import "abstract/placeholder";
+
+//base
+@import "base/base";
+@import "base/button";
+@import "base/normalize";
+
+//layout
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/footer";
+
+//component
+@import "component/blog.scss";
+@import "component/healthyFood.scss";
+@import "component/recipes.scss";
+@import "component/teste.scss";

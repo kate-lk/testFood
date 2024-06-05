@@ -1,0 +1,161 @@
+.header {
+    padding: 0 103px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-netbook {
+        max-width: 1300px;
+    }
+
+    @include media-tablet {
+        padding: 0 1rem;
+    }
+}
+
+.header__nav {
+    @extend %center;
+}
+
+.header__nav>a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 12rem;
+    width: 14rem;
+    background-image: url(../assets/png/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @include media-fullHD {
+        height: 100px;
+        width: 120px;
+        margin-right: 20rem;
+    }
+
+    @include media-netbook {
+        //     height: 30px;
+        // width: 30px;
+        //     margin-right: 0;
+    }
+}
+
+.nav__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.8rem 4rem;
+    @extend %font-nav;
+    color: $color-nav;
+
+    @include media-fullHD {
+        padding: 1.8rem 3rem;
+    }
+
+    &:hover {
+        .nav__item-svg {
+            fill: $color-active;
+        }
+    }
+
+    @include media-netbook {
+        padding: 1rem 2rem;
+    }
+
+    @include media-tablet {
+        display: none;
+    }
+
+}
+
+.nav__item-svg {
+    margin-bottom: 1rem;
+    fill: #797575;
+
+    &:hover {
+        fill: $color-active;
+    }
+}
+
+.header__phone {
+    background-color: $color-active;
+    padding: 2.2rem 4rem;
+    border-radius: 2rem;
+    color: $color-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: $color-bg;
+    }
+
+    @include media-fullHD {
+        padding: 1.2rem 3rem;
+    }
+
+    @include media-netbook {
+        padding: 1.2rem 2rem;
+    }
+}
+
+.header__phone-link {
+    text-decoration: none;
+
+    @include media-netbook {
+        margin: 0 2rem;
+    }
+}
+
+.header__phone-text {
+    display: inline;
+
+    @include media-netbook {
+        display: none;
+    }
+}
+
+.header__phone-img {
+    width: 3.8rem;
+    height: 3.8rem;
+
+    @include media-fullHD {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-right: 1rem;
+    }
+
+    @include media-netbook {
+        margin-right: 0;
+    }
+}
+
+.header__social {
+    @extend %center;
+
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.header__social>a {
+    text-decoration: none;
+    margin-left: 3rem;
+
+    &:hover {
+        .header__social-svg {
+            fill: $color-active;
+        }
+    }
+}
+
+.header__social-svg {
+    fill: #A79D9D;
+
+    &:hover {
+        fill: $color-active;
+    }
+}
