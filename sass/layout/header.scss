@@ -1,8 +1,6 @@
 .header {
-    padding: 0 103px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 0 10.3rem;
+    @extend %flex-space;
 
     @include media-netbook {
         max-width: 1300px;
@@ -14,7 +12,7 @@
 }
 
 .header__nav {
-    @extend %center;
+    @extend %flex-center;
 }
 
 .header__nav>a {
@@ -27,26 +25,17 @@
     background-image: url(../assets/png/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    flex-basis: 30%;
 
     @include media-fullHD {
         height: 100px;
         width: 120px;
-        margin-right: 20rem;
-    }
-
-    @include media-netbook {
-        //     height: 30px;
-        // width: 30px;
-        //     margin-right: 0;
     }
 }
 
 .nav__item {
-    display: flex;
+    @extend %flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 3.8rem 4rem;
     @extend %font-nav;
     color: $color-nav;
@@ -85,9 +74,7 @@
     padding: 2.2rem 4rem;
     border-radius: 2rem;
     color: $color-light;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
 
     &:hover {
         background-color: $color-bg;
@@ -134,7 +121,7 @@
 }
 
 .header__social {
-    @extend %center;
+    @extend %flex-center;
 
     @include media-tablet {
         display: none;

@@ -18,19 +18,13 @@
 }
 
 .teste-items {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %flex-space;
     flex-wrap: wrap;
     margin-top: 9rem;
 
     @include media-fullHD {
         margin: 5rem 0;
     }
-
-    // @include media-tablet  {
-    //     justify-content: center;
-    //     }
 }
 
 .teste-item {
@@ -56,8 +50,7 @@
 .teste-item-img {
     width: 14rem;
     height: 12rem;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %img-rep-size;
     background-position: center;
     border-radius: 2rem;
     margin-right: 1rem;

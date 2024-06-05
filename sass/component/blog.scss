@@ -1,9 +1,6 @@
 .dots {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     margin-top: 1.5rem;
-
 }
 
 .dot {
@@ -41,17 +38,13 @@
 }
 
 .blog-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %flex-space;
     margin: 5rem 0;
     margin-bottom: 8rem;
 }
 
 .blog-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %flex-space;
     position: relative;
 }
 
@@ -73,8 +66,7 @@
     width: 24.4rem;
     height: 24.4rem;
     background-image: url(../assets/png/ellipse1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %img-rep-size;
 
     @include media-fullHD {
         width: 18.4rem;

@@ -13,20 +13,10 @@ body {
   @include media-fullHD {
     @include font($size: 1.8rem, $weight: 400, $height: 2.1rem);
   }
-
-  // @include media-small-laptop {
-  //   @include font($size: 1.4rem, $weight: 400, $height: 1.6rem);
-  // }
-  // @include media-mobile {
-  //   @include font($size: 1.4rem, $weight: 400, $height: 1.6rem);
-  // }
 }
 
 h1 {
   @include font($size: 6.4rem, $weight: 700, $height: 8.3rem);
-  // @include media-fullHD {
-  //   @include font($size: 5.8rem, $weight: 500, $height: 5.6rem);
-  // }
 }
 
 h2 {

@@ -1,7 +1,5 @@
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %flex-space;
     background-color: $color-bg;
     padding: 0 6rem;
     margin-top: 10rem;
@@ -19,8 +17,7 @@
     width: 42rem;
     height: 30.7rem;
     background-image: url(../assets/png/footerLogo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %img-rep-size;
 
     @include media-fullHD {
         width: 32rem;
@@ -37,7 +34,6 @@
     @include font($size: 3.7rem, $weight: 400, $height: 4rem);
 
     @include media-fullHD {
-        // max-width: 50rem;
         @include font($size: 3.2rem, $weight: 400, $height: 4rem);
     }
 }

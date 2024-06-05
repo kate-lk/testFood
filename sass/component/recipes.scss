@@ -1,7 +1,5 @@
 .recipes-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     flex-wrap: wrap;
     margin: 5rem 0;
 }
@@ -10,8 +8,7 @@
     width: 42.5rem;
     height: 29rem;
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend %img-rep-size;
 
     &_1 {
         background-image: url(../assets/img/Rectangle\ 12.jpg);

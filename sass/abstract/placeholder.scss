@@ -10,9 +10,19 @@
   transition: all 0.3s ease-out;
 }
 
-%center {
+%flex-center {
   display: flex;
-  // flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+%flex-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%img-rep-size {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
